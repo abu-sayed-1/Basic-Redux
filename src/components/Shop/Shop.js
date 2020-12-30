@@ -4,7 +4,6 @@ import { addToCart } from '../../redux/actions/cartActions';
 import Product from '../Products/Product';
 
 const Shop = (props) => {
-    console.log(props);
     const { products, addToCart } = props;
     return (
         <div>
@@ -17,7 +16,6 @@ const Shop = (props) => {
 };
 const mapStateToProps = state => {
     return {
-        cart: state.cart,
         products: state.products
     }
 }
